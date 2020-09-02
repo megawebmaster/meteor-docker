@@ -1,8 +1,8 @@
-# Why?
+# Meteor Docker image
 
-Meteor does not provide an official Dockerfile, so this app will try to follow all versions and release them as docker 
-images in an automated way, so we can speed up our build Meteor Docker images where we need them and allows for easy 
-multi-stage Dockerfile deployment.
+Meteor does not provide an official Dockerfile, so this repo will try to follow all versions and release them as docker
+images, so we can speed up our build Meteor Docker images where we need them and allows for easy multi-stage Dockerfile
+deployment.
 
 ## Versions
 
@@ -18,7 +18,7 @@ There are multiple ways how you can use this meteor docker image but basically y
 have to add a file named ``Dockerfile`` to the root of your app and run ``docker build .``
 Here are some examples of Dockerfiles that you could use:
 
-**Simple Image for development**
+### Simple Image for development
 
 ```dockerfile
 FROM megawebmaster/meteor:1.11-1 as bundler
@@ -30,7 +30,7 @@ RUN meteor npm install
 CMD meteor --no-release-check 
 ```
 
-**Multi-stage-building of Alpine Production Image of your Meteor app**
+### Multi-stage-building of Alpine Production Image of your Meteor app
 
 ```dockerfile
 FROM megawebmaster/meteor:1.11-1 as bundler
