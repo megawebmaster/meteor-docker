@@ -11,6 +11,7 @@ Image                         | Meteor
 megawebmaster/meteor:1.10.1-1 | 1.10.1
 megawebmaster/meteor:1.10.2-1 | 1.10.2
 megawebmaster/meteor:1.11-1   | 1.11
+megawebmaster/meteor:1.11.1-1 | 1.11.1
 
 # How can I use the ``megawebmaster/meteor`` image?
 
